@@ -17,5 +17,7 @@ public class BulletManager : MonoBehaviour
 	{
 		if (col.gameObject.layer > 0)
 			Destroy(this.gameObject);
+		if (col.gameObject.tag == "Box")
+			Destroy(col.gameObject);
 	}
 }
